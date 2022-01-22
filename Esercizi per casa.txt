@@ -1,0 +1,14 @@
+1) Su trasporti Londra:
+Fornire statistiche su incidenti di un anno letto da input:
+https://any-api.com/tfl_gov_uk/tfl_gov_uk/docs/_AccidentStats_year_
+
+Ritornare elenco dei modi di trasporto pubblico:
+https://api.tfl.gov.uk/Line/Meta/Modes
+
+2) Nuovo progetto con nuovo repository 
+Visualizzare battuta del giorno 
+https://xkcd.com/info.0.json
+
+Visualizzare la battuta dato il numero letto da input usando
+http://xkcd.com/{comicId}/info.0.json
+http://xkcd.com/34/info.0.json
