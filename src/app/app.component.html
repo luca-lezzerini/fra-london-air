@@ -1,0 +1,22 @@
+{{airQData?.currentForecast[0]?.forecastSummary}}
+<br>
+<button (click)="airQuality()">Qualità dell'aria</button>
+<button (click)="getBikePoints()">Recupera Bike Points</button>
+<br>
+ID {{idbp}} Posti Liberi: {{npl}} Bici disponibili: {{nbd}}
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Latitudine</th>
+    <th>Longitudine</th>
+    <th>Vedi</th>
+  </tr>
+  <tr *ngFor="let bp of bikePoints">
+    <td>{{bp.id}}</td>
+    <td>{{bp.lat}}</td>
+    <td>{{bp.lon}}</td>
+    <td>
+      <button (click)="getBPDetails(bp)">Dettagli</button>
+    </td>
+  </tr>
+</table>
